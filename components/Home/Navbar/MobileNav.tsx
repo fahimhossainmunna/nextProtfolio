@@ -3,12 +3,12 @@ import Link from "next/link";
 import React from "react";
 import { CgClose } from "react-icons/cg";
 
-type Props = {
+type MobileNavProps = {
   showNav: boolean;
   closeNav: () => void;
 };
 
-const MobileNav = ({ closeNav, showNav }) => {
+const MobileNav = ({ closeNav, showNav }:MobileNavProps) => {
     const navOpen = showNav? "translate-x-0": "translate-x-[100%]"
   return (
     <>
