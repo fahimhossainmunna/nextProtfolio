@@ -4,10 +4,10 @@ import { IconType } from "react-icons";
 type Props = {
   role: string;
   Icon: IconType;
-  data?: string;
+  
 };
 
-const ResumeCard = ({ Icon, role, date }: Props) => {
+const ResumeCard = ({ Icon, role }: Props) => {
   return (
     <div className="mb-6">
       <div className="flex items-start space-x-6 bg-blue-950/20 duration-300 p-4  sm:p-8 rounded-md">
